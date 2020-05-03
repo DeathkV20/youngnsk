@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUNG NSK</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/icon.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick-theme.css"/>
+</head>
+<body id="target">
+    <header>
+        <a id="dark" href="javascript:void(0)"><img id="yes" ondragstart="return false" src="/meteorology.png" alt="" class="moon"></a>
+        <a id="dark2" href="javascript:void(0)"><img id="non" ondragstart="return false" src="/sun.png" alt="" class="moon2"></a>
+        <img src="/LOGO.png" alt="" class="logo" ondragstart="return false">
+        <div class="menu">
+            <a href="/index.html" class="menu_button">Главная</a>
+            <a href="/pages/news.html" class="menu_button">Новости</a>
+            <a href="/pages/about.html" class="menu_button">О нас</a>
+            <a href="/pages/contacts.html" class="menu_button">Контакты</a>
+        </div>
+    </header>
+    <div class="about">
+        <h1>Последние новости</h1>
+    </div>
+    <div class="news_slider">
+        <div class="news_block">
+            <h4 id="date">05.05.2020</h4>
+            <h2 class="title_block"><a href="/pages/news/id1.html">Новостной портал YOUNG NSK начал свою работу</a></h2>
+            <a data-fancybox="gallery" href="/pages/news/id1.png"><img class="img_block" src="/pages/news/id1.png"></a>
+        </div>
+        <div class="news_block">
+            <h4 id="date">05.05.2020</h4>
+            <h2 class="title_block"><a href="/pages/news/id1.html">Новостной портал YOUNG NSK начал свою работу</a></h2>
+            <a data-fancybox="gallery" href="/pages/news/id1.png"><img class="img_block" src="/pages/news/id1.png"></a>
+        </div>
+        <div class="news_block">
+            <h4 id="date">05.05.2020</h4>
+            <h2 class="title_block"><a href="/pages/news/id1.html">Новостной портал YOUNG NSK начал свою работу</a></h2>
+            <a data-fancybox="gallery" href="/pages/news/id1.png"><img class="img_block" src="/pages/news/id1.png"></a>
+        </div>
+    </div>
+<script src="/assets/js/theme.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>
+<script>$(document).ready(function(){
+    $('.news_slider').slick({
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: false,
+    });
+  });</script>
+</body>
+</html>
