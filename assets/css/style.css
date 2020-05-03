@@ -7,6 +7,23 @@ body,html {
     transition:.5s;
 }
 
+h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::selection,a::selection{
+    background: #000;
+    color:  white;
+}
+
+.dark .menu_button::selection {
+    background: #000;
+    color:  white;
+}
+
+
+.menu_button::selection, .logo::selection, .dark 
+h1::selection, .dark h2::selection, .dark h3::selection,.dark h4::selection, .dark h5::selection,.dark h6::selection,.dark a::selection{
+    background: rgb(255, 255, 255);
+    color:  rgb(0, 0, 0);
+}
+
 body {
     background: #f3f3f3;
 }
@@ -54,7 +71,9 @@ header {
 
 .about {
     text-align: center;
+    margin-top: 2%;
 }
+
 
 .moon {
     filter: invert(100);
