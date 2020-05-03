@@ -195,3 +195,26 @@ textarea {resize:horizontal;}
 .img_block {
     width: 100%;
 }
+
+.trail {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size:30px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.dark .trail {
+    color: white;
+}
+
+.trail:hover {
+    transform: scale(1.15);
+}
