@@ -28,9 +28,14 @@
             <a href="/pages/contacts.html" class="menu_button">Контакты</a>
         </div>
     </header>
+    <div class="dots_anchor" id="dots">
+        <a href="#latest" class="anchor_dot"><img ondragstart="return false" src="/shapes.png" alt=""></a>
+        <a href="#eventssoon" class="anchor_dot"><img ondragstart="return false" src="/shapes.png" alt=""></a>
+        <a href="#interview" class="anchor_dot"><img ondragstart="return false" src="/shapes.png" alt=""></a>
+    </div>
     <a data-fancybox="trailer" class="trail"  href="https://youtu.be/oYxP7BuL0rY">Трейлер проекта</a>
     <div class="about">
-        <h1>Последние новости</h1>
+        <h1 id="latest">Последние новости</h1>
     </div>
     <div class="news_slider">
         <div class="news_block">
@@ -50,7 +55,7 @@
         </div>
     </div>
     <div class="about" style="margin-bottom: 15%;">
-        <h1>Ближайшие события</h1>
+        <h1 id="eventssoon">Ближайшие события</h1>
         <h3 id="datenext"></h3>
         <div class="event_block">
             <h3 id="eventtitle"></h3>
@@ -71,6 +76,7 @@ VK.Widgets.Article("vk_article_-26284064_15959", "@youngneftekamsk-mercy-o-plana
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>
 <script src="/assets/js/date.js"></script>
+<script src="/assets/js/dots.js"></script>
 <script>
 $(document).ready(function(){
     $('.news_slider').slick({

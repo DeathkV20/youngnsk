@@ -5,6 +5,7 @@ body,html {
     margin: 0;
     font-family: 'Jost', sans-serif;
     transition:.5s;
+    scroll-behavior: smooth;
 }
 
 h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::selection,a::selection{
@@ -101,6 +102,41 @@ header {
 
 .dark header {
     background: rgb(7, 7, 7);
+}
+
+.dots_anchor {
+    position: fixed;
+    right: -7%;
+    left: auto;
+    width: 10%;
+    opacity: 0;
+    transition: .5s;
+}
+
+.anchor_dot img {
+    width: 5%;
+    opacity: 0.4;
+    transition: .5s;
+}
+
+.opacity {
+    opacity: 1;
+    transition: .5s;
+}
+
+
+.anchor_dot img:hover {
+    opacity: 1;
+}
+
+.dark .anchor_dot img {
+    filter: invert(100);
+}
+
+.anchor_dot {
+    display: flex;
+    align-items: center;
+    margin: 5px;
 }
 
 .dark .menu_button {
@@ -213,4 +249,14 @@ textarea {resize:horizontal;}
 
 .trail:hover {
     transform: scale(1.15);
+}
+
+@media (max-width: 478px) {
+    .anchor_dot img {
+        width: 20%;
+    }
+
+    .dots_anchor {
+        right: -2%;
+    }
 }
