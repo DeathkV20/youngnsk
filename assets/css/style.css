@@ -12,11 +12,6 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::select
     color:  white;
 }
 
-.dark .menu_button::selection {
-    background: #000;
-    color:  white;
-}
-
 
 .menu_button::selection, .logo::selection, .dark 
 h1::selection, .dark h2::selection, .dark h3::selection,.dark h4::selection, .dark h5::selection,.dark h6::selection,.dark a::selection{
@@ -101,19 +96,19 @@ header {
 }
 
 .dark .moon, .dark .moon2 {
-    filter: invert(0);
+    filter: invert(100);
 }
 
 .dark header {
-    background: #f3f3f3;
+    background: rgb(7, 7, 7);
 }
 
 .dark .menu_button {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .dark .logo {
-    filter: invert(100);
+    filter: invert(0);
 }
 
 .visible {
