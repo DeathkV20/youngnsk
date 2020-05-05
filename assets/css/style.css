@@ -281,4 +281,14 @@ textarea {resize:horizontal;}
     .dots_anchor {
         right: -2%;
     }
+
+    .avatar img {
+        width: 15%;
+        margin: 15px;
+    }
+
+    .moon, .moon2 {
+        width: 4%;
+        top: 3%;
+    }
 }
