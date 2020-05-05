@@ -13,8 +13,8 @@
 </head>
 <body id="target">
     <header>
-        <a id="dark" href="javascript:void(0)"><img id="yes" ondragstart="return false" src="/meteorology.png" alt="" class="moon"></a>
-        <a id="dark2" href="javascript:void(0)"><img id="non" ondragstart="return false" src="/sun.png" alt="" class="moon2"></a>
+        <a id="dark" href="javascript:void(0)"><img ondragstart="return false" id="yes" src="/meteorology.png" alt="" class="moon"></a>
+        <a id="dark2" href="javascript:void(0)"><img ondragstart="return false" id="non" src="/sun.png" alt="" class="moon2"></a>
         <img src="/LOGO.png" alt="" class="logo" ondragstart="return false">
         <div class="menu">
             <a href="/index.html" class="menu_button">Главная</a>
@@ -24,23 +24,29 @@
         </div>
     </header>
     <div class="about">
-        <h1>Новости</h1>
+        <h1 id="title2">Новости</h1>
     </div>
     <div class="news">
-        <div class="about" style="margin-bottom: 5%;">
-            <a href="/pages/add_news.html" class="small_width_a">Предложить новость</a>
-        </div>
         <div class="news_block">
-            <h4 id="date">05.05.2020</h4>
-            <h2 class="title_block"><a href="/pages/news/id2.html">МЁRCY: О планах на будущее и сольном альбоме</a></h2>
+            <h4 id="date">.</h4>
+            <h2 class="title_block"><a href="/pages/news/id2.html" id="title">.</a></h2>
+            <h3 class="desc_block" id="text">.</h3>
             <a data-fancybox="gallery" href="/pages/news/id2.jpg"><img class="img_block" src="/pages/news/id2.jpg"></a>
-        </div>
-        <div class="news_block">
-            <h4 id="date">03.05.2020</h4>
-            <h2 class="title_block"><a href="/pages/news/id1.html">Новостной портал YOUNG NSK начал свою работу</a></h2>
-            <a data-fancybox="gallery" href="/pages/news/id1.png"><img class="img_block" src="/pages/news/id1.png"></a>
         </div>
     </div>
 <script src="/assets/js/theme.js"></script>
+<script>
+
+    var title = document.getElementById("title")
+    var text = document.getElementById("text")
+    var date = document.getElementById("date")
+
+    title.innerHTML = "МЁRCY: О планах на будущее и сольном альбоме"
+    text.innerHTML = "Интервью с начинающим артистом из Нефтекамска MЁRCY. 5 вопросов о начале, планах и о сольном альбоме. Прочитать можно здесь: https://vk.com/@youngneftekamsk-mercy-o-planah-na-buduschee-i-solnom-albome или на нашем сайте в разделе 'Главная'"
+    date.innerHTML = "05."+"05."+"2020"
+
+    document.title = "YOUNG NSK | " + document.getElementById("title").innerHTML
+    document.getElementById("title2").innerHTML = document.getElementById("title").innerHTML
+</script>
 </body>
 </html>
