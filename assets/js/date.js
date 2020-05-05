@@ -1,4 +1,8 @@
 var ut = document.getElementById("datenext")
+var eventblock = document.getElementById("eventblock")
+var eventtitle = document.getElementById("eventtitle")
+var eventdesc = document.getElementById("eventdesc")
+var eventdate = document.getElementById("eventdate")
 
 var data = new Date();
 var month=new Array(12);
