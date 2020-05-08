@@ -274,13 +274,19 @@ textarea {resize:horizontal;}
 }
 
 .video_inter {
-    width: 30%;
+    width: 70%;
     color: black;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 15px;
     margin: 20px;
     height: 250px;
     object-fit: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
