@@ -273,6 +273,17 @@ textarea {resize:horizontal;}
     color: white;
 }
 
+.video_inter {
+    width: 50%;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px;
+
+}
+
+
+
 @media (max-width: 478px) {
     .anchor_dot img {
         width: 20%;
