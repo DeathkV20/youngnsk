@@ -263,13 +263,17 @@ textarea {resize:horizontal;}
     align-items: center;
 }
 
-.nodec {
+.nodec, .nodec2 {
     color: black;
     text-decoration: none;
     transition: .5s;
 }
 
-.dark .nodec {
+.nodec2 {
+    font-weight: 600;
+}
+
+.dark .nodec, .dark .nodec2 {
     color: white;
 }
 
@@ -288,6 +292,16 @@ textarea {resize:horizontal;}
     margin-left: auto;
     margin-right: auto;
 }
+
+.nodec2:hover {
+    box-shadow: 0px 1.5px 0px 0 black;
+}
+
+.articles {
+    margin-top: 2%;
+}
+
+
 
 
 
