@@ -293,10 +293,6 @@ textarea {resize:horizontal;}
     margin-right: auto;
 }
 
-.nodec2:hover {
-    box-shadow: 0px 1.5px 0px 0 black;
-}
-
 .articles {
     margin-top: 2%;
 }
