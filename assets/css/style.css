@@ -322,6 +322,14 @@ textarea {resize:horizontal;}
     color: white;
 }
 
+.about h5 {
+    transition: .5s;
+}
+
+audio {
+    width: 100%;
+}
+
 
 @media (max-width: 478px) {
     .anchor_dot img {
