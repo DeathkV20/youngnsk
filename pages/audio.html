@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUNG NSK | Аудио</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/icon.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</head>
+<body id="target">
+    <header>
+        <a id="dark" href="javascript:void(0)"><img id="yes" ondragstart="return false" src="/meteorology.png" alt="" class="moon"></a>
+        <a id="dark2" href="javascript:void(0)"><img id="non" ondragstart="return false" src="/sun.png" alt="" class="moon2"></a>
+        <img src="/LOGO.png" alt="" class="logo" ondragstart="return false">
+        <div class="menu">
+            <a href="/index.html" class="menu_button">Главная</a>
+            <a href="/pages/news.html" class="menu_button">Новости</a>
+            <a href="/pages/about.html" class="menu_button">О нас</a>
+            <a href="/pages/contacts.html" class="menu_button">Контакты</a>
+        </div>
+    </header>
+<div class="about">
+    <h1>Топ треки месяца</h1>
+    <h5 id="latetrack">Последнее обновление</h5>
+</div>
+<div class="audio_block">
+    <h2>1. Bad and Slow</h2>
+    <h3>Gazek</h3>
+    <audio controls>
+        <source src="/assets/top5/Gazek - Bad And Slow.mp3" type="audio/mpeg">
+    </audio>
+    </div>
+<div class="audio_block">
+    <h2>2. ГДЗ</h2>
+    <h3>INSTACHILD</h3>
+    <audio controls>
+        <source src="/assets/top5/INSTACHILD - ГДЗ.mp3" type="audio/mpeg">
+    </audio>
+</div>
+<div class="audio_block">
+    <h2>3. NoName</h2>
+    <h3>PLYTON</h3>
+    <audio controls>
+        <source src="/assets/top5/JesusX - Noname.mp3" type="audio/mpeg">
+    </audio>
+</div>
+<div class="audio_block">
+    <h2>4. Мгла</h2>
+    <h3>P4ND4</h3>
+    <audio controls>
+        <source src="/assets/top5/P4ND4 - Мгла.mp3" type="audio/mpeg">
+    </audio>
+</div>
+<div class="audio_block">
+    <h2>5. Fuck Drugs</h2>
+    <h3>YUNGZOLRIE</h3>
+    <audio controls>
+        <source src="/assets/top5/YUNGZOLRIE - Fuck Drugs.mp3" type="audio/mpeg">
+    </audio>
+</div>
+<script src="/assets/js/theme.js"></script>
+<script>
+    var latest = document.getElementById("latetrack")
+    var datetr = "11.05.2020"
+    latest.innerHTML = "Последнее обновление: " + datetr
+</script>
+</body>
+</html>
