@@ -331,6 +331,60 @@ audio {
     width: 100%;
 }
 
+.prem_block {
+    background: white;
+    width: 20%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    transition: .5s;
+}
+
+.prem_block h3 {
+    font-weight: 400;
+    margin: 20px;
+}
+
+.prem_block_hat {
+    background: #000;
+    color: white;
+    width: 20%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+}
+
+.prem_but {
+    font-size: 20px;
+    text-decoration: none;
+    background: #000;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    transition: .5s;
+}
+
+.prem_but:hover {
+    color: black;
+    background: white;
+}
+
+.dark .prem_block {
+    background: #000;
+    color: white;
+}
+
+.dark .prem_block_hat {
+    background: rgb(10, 10, 10);
+}
+
+.dark .prem_but:hover {
+    background: rgb(10, 10, 10);
+    color: white;
+}
+
 .card {
     width: 80%;
     border-radius: 15px;
@@ -383,5 +437,9 @@ audio {
     .moon, .moon2 {
         width: 4%;
         top: 3%;
+    }
+
+    .prem_block,.prem_block_hat {
+        width: 75%;
     }
 }
