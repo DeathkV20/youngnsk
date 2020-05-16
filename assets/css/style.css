@@ -257,6 +257,63 @@ textarea {resize:horizontal;}
     margin: 5px;
 }
 
+.tovar_block {
+    text-align: left;
+    width: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    transition: .5s;
+}
+
+.tovar_block img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.buy {
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: #000;
+    border-radius: 500px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.buy:hover {
+    background: white;
+    color: black;
+}
+
+.dark .buy {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.tovar {
+    display: flex;
+    justify-content: center;
+}
+
+.dark .buy:hover {
+    background: rgb(3, 3, 3);
+    color: white;
+}
+
+.dark .tovar_block {
+    background: rgb(8, 8, 8);
+    color: white;
+}
+
 .avatar {
     display: flex;
     justify-content: center;
@@ -427,6 +484,16 @@ audio {
 
     .dots_anchor {
         right: -2%;
+    }
+
+    .tovar {
+        display: block;
+    }
+
+    .tovar_block {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .avatar img {
