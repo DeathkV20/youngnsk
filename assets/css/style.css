@@ -367,6 +367,7 @@ textarea {resize:horizontal;}
     margin-right: auto;
 }
 
+
 .video_daid {
     width: 70%;
     color: black;
@@ -380,6 +381,10 @@ textarea {resize:horizontal;}
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.dark .video_daid {
+    color:white
 }
 
 
