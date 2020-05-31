@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUNG NSK | Новости</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/icon.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</head>
+<body id="target">
+    <header>
+        <a id="dark" href="javascript:void(0)"><img ondragstart="return false" id="yes" src="/meteorology.png" alt="" class="moon"></a>
+        <a id="dark2" href="javascript:void(0)"><img ondragstart="return false" id="non" src="/sun.png" alt="" class="moon2"></a>
+        <img src="/LOGO.png" alt="" class="logo" ondragstart="return false">
+        <div class="menu">
+            <a href="/index.html" class="menu_button">Главная</a>
+            <a href="/pages/news.html" class="menu_button">Новости</a>
+            <a href="/pages/about.html" class="menu_button">О нас</a>
+            <a href="/pages/contacts.html" class="menu_button">Контакты</a>
+        </div>
+    </header>
+    <div class="about">
+        <h1 id="title2">Новости</h1>
+    </div>
+    <div class="news">
+        <div class="news_block">
+            <h4 id="date">.</h4>
+            <h2 class="title_block"><a href="/pages/news/id16.html" id="title">.</a></h2>
+            <h3 class="desc_block" id="text">.</h3>
+            <a data-fancybox="news-in" href="/pages/news/id16.jpg"><img class="img_block" src="/pages/news/id16.jpg"></a>
+        </div>
+    </div>
+<script src="/assets/js/theme.js"></script>
+<script>
+
+    var title = document.getElementById("title")
+    var text = document.getElementById("text")
+    var date = document.getElementById("date")
+
+    title.innerHTML = "INSTACHILD - Fu*k School"
+    text.innerHTML = "Новый трек от INSTACHILD. Послушать можно <a href='https://vk.com/instachild?w=wall-171494817_10522' target='_blank'>здесь.</a>"
+    date.innerHTML = "31."+"05."+"2020"
+
+    document.title = "YOUNG NSK | " + document.getElementById("title").innerHTML
+    document.getElementById("title2").innerHTML = document.getElementById("title").innerHTML
+</script>
+</body>
+</html>
