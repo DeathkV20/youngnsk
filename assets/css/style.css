@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Jost:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 body,html {
     padding: 0;
     margin: 0;
-    font-family: 'Jost', sans-serif;
+    /*(font-family: 'Jost', sans-serif;*/
+    font-family: 'Manrope', sans-serif;
     transition:.5s;
     scroll-behavior: smooth;
 }
@@ -79,6 +81,22 @@ header {
     right: 5%;
 }
 
+.dop_block_one a {
+    transition: .5s;
+}
+
+.articles a:hover, .dop_block_one a:hover {
+    box-shadow: 0px 1px 0 0 black;
+}
+
+.dark .articles a:hover, .dark .dop_block_one a:hover {
+    box-shadow: 0px 1px 0 0 rgb(255, 255, 255);
+}
+
+span {
+    display: none;
+}
+
 .moon2 {
     filter: invert(100);
     display: none;
@@ -86,6 +104,10 @@ header {
     position: absolute;
     top: 5%;
     right: 5%;
+}
+
+.dop_block_one {
+    margin: 10px;
 }
 
 .dark {
@@ -184,6 +206,14 @@ header {
     transition: .5s;
 }
 
+.small_width_a:hover {
+    box-shadow: 0px 1px 0 0 black;
+}
+
+.dark .small_width_a:hover {
+    box-shadow: 0px 1px 0 0 white;
+}
+
 a:active, a:focus { outline: none; }
 
 input, textarea {outline:none;}
@@ -232,7 +262,7 @@ textarea {resize:horizontal;}
     text-align: center;
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 25px;
     font-size:30px;
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -347,6 +377,13 @@ textarea {resize:horizontal;}
     font-weight: 600;
 }
 
+.nodec3 {
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+    margin: 10px;
+}
+
 .dark .nodec, .dark .nodec2 {
     color: white;
 }
@@ -356,7 +393,7 @@ textarea {resize:horizontal;}
     color: black;
     text-decoration: none;
     border-radius: 15px;
-    margin: 20px;
+    margin: 25px;
     height: 250px;
     object-fit: cover;
     text-align: center;
