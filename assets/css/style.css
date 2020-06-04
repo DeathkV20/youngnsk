@@ -584,4 +584,8 @@ audio {
     .prem_block,.prem_block_hat {
         width: 75%;
     }
+
+    .audio_block {
+        width: 75%;
+    }
 }
