@@ -426,7 +426,7 @@ textarea {resize:horizontal;}
 
 
 .articles {
-    margin-top: 2%;
+    margin-top: 3%;
 }
 
 #dark_button {
@@ -552,6 +552,18 @@ audio {
     background-color: rgb(7, 7, 7);
 }
 
+.articles a {
+    font-weight: 600;
+}
+
+#p15 {
+    margin-bottom: 15%;
+}
+
+#interview {
+    margin-bottom: 15%;
+}
+
 @media (max-width: 478px) {
     .anchor_dot img {
         width: 20%;
@@ -561,8 +573,21 @@ audio {
         right: -2%;
     }
 
+    #p15 {
+        margin-bottom: 25%;
+    }
+    
+    #interview {
+        margin-bottom: 25%;
+    }
+
+
     .tovar {
         display: block;
+    }
+
+    .about {
+        margin-bottom: 10%;
     }
 
     .tovar_block {
@@ -587,5 +612,9 @@ audio {
 
     .audio_block {
         width: 75%;
+    }
+
+    .articles{
+        margin-top: 10%;
     }
 }
