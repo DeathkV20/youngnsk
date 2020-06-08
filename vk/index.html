@@ -10,9 +10,48 @@
     <div class="intro">
         <div class="logos">
         <img src="/LOGO.png" alt="" class="logo">
-        <h2 style="font-size: 72px;">VK version</h2>
+        <h2 style="font-size: 48px;">VK version</h2>
     </div>
     </div>
-    шо смотриш? я не сделал еще это
+    
+    <nav id="menu">
+        <h2>YOUNG NSK VK</h2>
+        <div class="">
+        <a href="">Главная</a>
+    </div>
+    <div class="">
+        <a href="">О нас</a>
+    </div>
+        <div class="">
+        <a href="">Новости</a>
+        </div>
+        <div class="">
+        <a href="">Контакты</a>
+        </div>
+      </nav>
+  
+      <main id="panel">
+        <header>
+          <a class="toggle-button" href="javascript:void(0)"><img src="https://image.flaticon.com/icons/png/512/1828/1828551.png" alt=""></a>
+        </header>
+      </main>
+
+      <h1 style="color: white; text-align: center;">В РАЗРАБОТКЕ</h1>
+      
+  
+      <script src="/slideout-1.0.1/dist/slideout.min.js"></script>
+      <script>
+        var slideout = new Slideout({
+          'panel': document.getElementById('panel'),
+          'menu': document.getElementById('menu'),
+          'padding': 256,
+          'tolerance': 70
+        });
+  
+        // Toggle button
+        document.querySelector('.toggle-button').addEventListener('click', function() {
+          slideout.toggle();
+        });
+      </script>
 </body>
 </html>

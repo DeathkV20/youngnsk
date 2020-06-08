@@ -7,6 +7,36 @@ body,html {
     /*(font-family: 'Jost', sans-serif;*/
     font-family: 'Manrope', sans-serif;
     scroll-behavior: smooth;
+    background: rgb(10, 10, 10);
+}
+
+#menu {
+    background: rgb(20, 20, 20);
+    padding: 25px;
+    color: white;
+    z-index: 1;
+    transition: .5s;
+}
+
+.toggle-button img {
+    filter: invert(100);
+    width: 2%;
+    margin: 10px;
+}
+
+.toggle-button {
+    z-index: 0;
+
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 @keyframes logo-drop {
@@ -93,4 +123,41 @@ body,html {
     opacity: 0;
     z-index: -1;
     animation: bg 8s;
+}
+
+.slideout-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 256px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+  }
+
+  .slideout-panel {
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+  }
+
+  .slideout-open,
+  .slideout-open body,
+  .slideout-open .slideout-panel {
+    overflow: hidden;
+  }
+
+  .slideout-open .slideout-menu {
+    display: block;
+  }
+
+@media (max-width:478px) {
+    .toggle-button img {
+        width: 7%;
+        margin: 10px;
+    }
+
 }
