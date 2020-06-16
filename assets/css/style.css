@@ -563,6 +563,77 @@ audio {
     margin-bottom: 15%;
 }
 
+
+
+.menu_lide {
+    width: 5%;
+    position: fixed;
+    top: 3%;
+    left: 5%;
+    filter: invert(100);
+    display: none;
+    transition: .5s;
+}
+
+.menu_lide:hover, .close:hover {
+    transform: scale(0.75);
+}
+
+.close {
+    width: 7%;
+    margin-top: 2%;
+    margin-left: 93%;
+    filter: invert(100);
+    transition: .5s;
+}
+
+.bg-black {
+    background: #000;
+    padding: 8.3%;
+}
+
+.slidd h1 {
+    padding-left: 10%;
+}
+
+.dark .slidd h1, .dark .menu-slide{
+    color: white;
+}
+
+.dark .bg-black {
+    background:rgb(7,7,7);
+}
+
+.dark .pus {
+    background: #000;
+}
+
+#first {
+    margin-top: 15%;
+}
+.menu-slide {
+    padding-left: 10%;
+    text-decoration: none;
+    color: #000;
+}
+
+.slidd {
+    margin-top: 10%;
+}
+
+.dark .pus {
+    background: rgb(10, 10, 10);
+}
+
+.dark .pus img {
+    filter: invert(100);
+}
+.slided {
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+}
+
 @media (max-width: 478px) {
     .anchor_dot img {
         width: 20%;
@@ -570,6 +641,22 @@ audio {
 
     .dots_anchor {
         right: -2%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    header {
+        padding: 8.3%;
+    }
+
+    .menu_lide {
+        display: block;
     }
 
     #p15 {

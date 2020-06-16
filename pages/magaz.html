@@ -11,9 +11,11 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick.css"/>
     <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
 <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick-theme.css"/>
 </head>
 <body id="target">
+    <div id="dots"></div>
     <header>
         <a id="dark" href="javascript:void(0)"><img ondragstart="return false" id="yes" src="/meteorology.png" alt="" class="moon"></a>
         <a id="dark2" href="javascript:void(0)"><img  ondragstart="return false" id="non" src="/sun.png" alt="" class="moon2"></a>
@@ -25,6 +27,31 @@
             <a href="/pages/contacts.html" class="menu_button">Контакты</a>
         </div>
     </header>
+    <div data-pushbar-id="mypushbar1" data-pushbar-direction="left" class="pus">
+        <div class="bg-black">
+        <a href="javascript:void(0);"  class="slidee" data-pushbar-close><img src="https://image.flaticon.com/icons/svg/271/271203.svg" alt="" class="close"></a>
+    </div> 
+        <div class="slidd">
+            <h1>YOUNG NSK</h1>
+        </div>
+        <div class="slidd" id='first'>
+        <a href="/index.html" class="menu-slide">Главная</a>
+    </div>
+    <div class="slidd">
+          <a href="/pages/news.html" class="menu-slide">Новости</a>
+        </div>
+        <div class="slidd">
+          <a href="/pages/about.html" class="menu-slide">О нас</a>
+        </div>
+        <div class="slidd">
+          <a href="/pages/contacts.html" class="menu-slide">Контакты</a>
+        </div>
+      </div>
+      <div class="pushbar_main_content">
+          <a href="javascript:void(0);" data-pushbar-target="mypushbar1">
+            <img id="dier" src="https://image.flaticon.com/icons/svg/876/876207.svg" alt="" class="menu_lide">
+          </a>
+      </div>
     <div class="about">
         <h1>Магазин</h1>
     </div>
@@ -51,5 +78,12 @@
 <script src="/assets/js/theme.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+<script type="text/javascript">
+    const pushbar = new Pushbar({
+          blur:true,
+          overlay:true,
+        });
+</script><script src="/assets/js/dots.js"></script>
 </body>
 </html>
