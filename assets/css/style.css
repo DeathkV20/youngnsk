@@ -568,11 +568,14 @@ audio {
 .menu_lide {
     width: 5%;
     position: fixed;
-    top: 3%;
+    top: 1.5%;
     left: 5%;
     filter: invert(100);
     display: none;
     transition: .5s;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .menu_lide:hover, .close:hover {
