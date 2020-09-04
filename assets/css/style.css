@@ -710,6 +710,18 @@ border-radius: 5px;
         width: 20%;
     }
 
+    #PLYTON {
+        background-position-x: 60%;
+    }
+
+    .artist-card h2 {
+        font-size: 18px;
+    }
+
+    .soc-block a {
+        width: 70%;
+    }
+
     .dots_anchor {
         right: -2%;
     }
