@@ -1,19 +1,17 @@
-var button = document.getElementById("dark")
-var button2 = document.getElementById("dark2")
-var target = document.getElementById("target")
-var non = document.getElementById("non")
-var yes = document.getElementById("yes")
-checkCookie("theme")
+var button = document.getElementById("never")
+var notification = document.getElementById("vk_auth")
+var login = document.getElementById("login")
+
+
+checkCookie("enabled")
 
 function checkCookie (name) {
-    if (getCookie(name) == "dark") {
-        target.classList.add("dark")
-        non.classList.add("visible")
-        yes.classList.add("inv")
+    if (getCookie(name) == "false") {
+        notification.remove()
+        button.remove()
+        login.remove()
     } else {
-        target.classList.remove("dark")
-        non.classList.remove("visible")
-        yes.classList.remove("inv")
+
     } 
 }
 
@@ -56,15 +54,8 @@ function getCookie(name) {
   }
 
 button.addEventListener("click", function(){
-    target.classList.add("dark")
-    non.classList.add("visible")
-    yes.classList.add("inv")
-    setCookie("theme","dark",{'max-age': 363300})
-})
-
-button2.addEventListener("click", function(){
-    target.classList.remove("dark")
-    non.classList.remove("visible")
-    yes.classList.remove("inv")
-    setCookie("theme","light",{'max-age': 363300})
+    notification.remove()
+    button.remove()
+    login.remove()
+    setCookie("enabled","false",{'max-age': 363300})
 })

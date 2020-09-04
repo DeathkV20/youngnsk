@@ -50,38 +50,22 @@
             <img id="dier" src="https://image.flaticon.com/icons/svg/876/876207.svg" alt="" class="menu_lide">
           </a>
       </div>
-    <div class="about">
-        <h1>Новости</h1>
+    <div class="about" style="padding-left: 5%; padding-right: 5% ;">
+        <h1>Для вас</h1>
+        <!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+
+<script type="text/javascript">
+  VK.init({apiId: 7456035, onlyWidgets: true});
+</script>
+
+<!-- Put this div tag to the place, where the Like block will be -->
+<div id="vk_recommended" style="margin-left: auto; margin-right: auto;"></div>
+<script type="text/javascript">
+VK.Widgets.Recommended("vk_recommended", {limit: 5, verb: 1});
+</script>
     </div>
     <div class="news">
-        <div class="about" style="margin-bottom: 5%;">
-            <a href="/pages/add_news.html" class="small_width_a">Предложить новость</a>
-        </div>
-        <div class="news_block">
-            <h4 id="date">17.07.2020</h4>
-            <h2 class="title_block"><a href="/pages/news/id5.html">SKALETTO 2: Об альбоме, Fatality и «Фараоне»</a></h2>
-            <a data-fancybox="news" href="https://sun1-98.userapi.com/c857136/v857136758/1d5583/5dslTfEtrAM.jpg"><img class="img_block" src="https://sun1-98.userapi.com/c857136/v857136758/1d5583/5dslTfEtrAM.jpg"></a>
-        </div> 
-        <div class="news_block">
-            <h4 id="date">24.06.2020</h4>
-            <h2 class="title_block"><a href="/pages/news/id4.html">CHARLI: Об артистах из НСК и F1REBALL</a></h2>
-            <a data-fancybox="news" href="https://sun9-39.userapi.com/c856028/v856028097/2390cc/L3--3oROjog.jpg"><img class="img_block" src="https://sun9-39.userapi.com/c856028/v856028097/2390cc/L3--3oROjog.jpg"></a>
-        </div> 
-        <div class="news_block">
-            <h4 id="date">18.06.2020</h4>
-            <h2 class="title_block"><a href="/pages/news/id3.html">SKALETTO: Баттл с INSTACHILD и GHETTO GOSPEL UNDERGROUND</a></h2>
-            <a data-fancybox="news" href="https://sun9-14.userapi.com/c857220/v857220254/1bd37c/x1CMQzQi1S0.jpg"><img class="img_block" src="https://sun9-14.userapi.com/c857220/v857220254/1bd37c/x1CMQzQi1S0.jpg"></a>
-        </div> 
-        <div class="news_block">
-            <h4 id="date">17.06.2020</h4>
-            <h2 class="title_block"><a href="/pages/news/id2.html">SKALETTO - Траур</a></h2>
-            <a data-fancybox="news" href="https://sun9-64.userapi.com/c206724/v206724160/13ecde/gbmkMD2V5Js.jpg"><img class="img_block" src="https://sun9-64.userapi.com/c206724/v206724160/13ecde/gbmkMD2V5Js.jpg"></a>
-        </div> 
-        <div class="news_block">
-            <h4 id="date">16.06.2020</h4>
-            <h2 class="title_block"><a href="/pages/news/id1.html">Произведена очистка сайта</a></h2>
-            <a data-fancybox="news" href="https://sun9-63.userapi.com/c858232/v858232991/205bf2/hC_ffrGFndQ.jpg"><img class="img_block" src="https://sun9-63.userapi.com/c858232/v858232991/205bf2/hC_ffrGFndQ.jpg"></a>
-        </div> 
     </div>
 <script src="/assets/js/theme.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
