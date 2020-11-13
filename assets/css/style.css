@@ -14,6 +14,12 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::select
     color:  white;
 }
 
+#vk_groups {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 
 .menu_button::selection, .logo::selection, .dark 
 h1::selection, .dark h2::selection, .dark h3::selection,.dark h4::selection, .dark h5::selection,.dark h6::selection,.dark a::selection{
