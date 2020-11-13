@@ -53,9 +53,34 @@
       </div>
     <div class="about" style="padding-left: 5%; padding-right: 5% ;">
         <h1>Для вас</h1>
+        <!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
 
-    <iframe src="https://vk.com/youngneftekamsk" height="500px" width="100%">
- </iframe>
+<script type="text/javascript">
+  VK.init({apiId: 7456035, onlyWidgets: true});
+</script>
+
+<!-- Put this div tag to the place, where the Like block will be -->
+<div id="vk_recommended" style="margin-left: auto; margin-right: auto;"></div>
+<script type="text/javascript">
+VK.Widgets.Recommended("vk_recommended", {limit: 5, verb: 1});
+</script>
+    </div>
+    <div class="news">
+    </div>
+    <!-- VK Widget -->
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+VK.Widgets.CommunityMessages("vk_community_messages", 194947661, {disableExpandChatSound: "1",disableNewMessagesSound: "1",tooltipButtonText: "Есть вопрос?"});
+</script>
+<script src="/assets/js/theme.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+<script type="text/javascript">
+    const pushbar = new Pushbar({
+          blur:true,
+          overlay:true,
+        });
+
 </script><script src="/assets/js/dots.js"></script>
 </body>
 </html>
